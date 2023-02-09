@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- Recruiting --></label>
+        <name>Recruiting</name>
+    </customApplications>
+    <prompts>
+        <name>SalesCloudInboxDockedPrompt</name>
+        <promptVersions>
+            <name>SalesCloudInboxDockedPrompt</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>tabletFullWidthGA</name>
+        <promptVersions>
+            <name>TabletFullWidthGA</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>SalesHVSDialer</name>
+        <promptVersions>
+            <name>Sales HVS Dialer</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>CDPOnboardingInAppGuidance</name>
+        <promptVersions>
+            <name>Conseils intégrés à l’application d’intégration CDP</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>EinsteinPredictionBuilderSetupPagePrompt</name>
+        <promptVersions>
+            <name>Invite de page de configuration Générateur de prédiction Einstein</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>MFAAutoEnableAwarenessforNonCompliantOrgs</name>
+        <promptVersions>
+            <name>Prise en compte de l’activ. auto de la MFA pour les organisations non conformes</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>ServiceCaseClassificationTargetedPrompt</name>
+        <promptVersions>
+            <name>ServiceCaseClassificationTargetedPrompt</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>NPSPLicenseDay25</name>
+        <promptVersions>
+            <name>Licence NPSP Jour 25</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>IAGFeatureAdoption</name>
+        <promptVersions>
+            <name>Étape 1 de l’adoption de la fonctionnalité IAG</name>
+            <stepNumber>1</stepNumber>
+        </promptVersions>
+        <promptVersions>
+            <name>Étape 2 de l’adoption de la fonctionnalité IAG</name>
+            <stepNumber>2</stepNumber>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>EnablementSwitchToProgramsEnblAdmin</name>
+        <promptVersions>
+            <name>Basculer aisément entre les mesures et les programmes</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>FlowsForServiceDockedPrompt</name>
+        <promptVersions>
+            <name>FlowsForServiceDockedPrompt</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>SalesCoreQuoteAdminCpq</name>
+        <promptVersions>
+            <name>Administrateur de Devis CPQ dans la version principale de vente</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>EnablementExploreProgramsEnblAdmin</name>
+        <promptVersions>
+            <name>Explorer les programmes</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>EnablementExploreMeasuresEnblAdmin</name>
+        <promptVersions>
+            <name>Explorer les mesures</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>EnablementExploreAnalyticsEnblAdmin</name>
+        <promptVersions>
+            <name>Explorer les analyses</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>ServiceMacrosDockedPrompt</name>
+        <promptVersions>
+            <name>ServiceMacrosDockedPrompt</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>SalesCloudforSlackWalkthrough</name>
+        <promptVersions>
+            <name>SalesCloudforSlackWalkthrough Étape 1</name>
+            <stepNumber>1</stepNumber>
+        </promptVersions>
+        <promptVersions>
+            <name>SalesCloudforSlackWalkthrough Étape 2</name>
+            <stepNumber>2</stepNumber>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>X2StepWalkthroughonReports</name>
+        <promptVersions>
+            <name>Procédure en 2 étapes sur Rapports Étape 1</name>
+            <stepNumber>1</stepNumber>
+        </promptVersions>
+        <promptVersions>
+            <name>Procédure en 2 étapes sur Rapports Étape 2</name>
+            <stepNumber>2</stepNumber>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>NPSPLicenseDay1</name>
+        <promptVersions>
+            <name>Licence NPSP Jour 1</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>SalesGenderFieldsAdmin</name>
+        <promptVersions>
+            <name>Capturer les données inclusives sur le genre</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>EngagementAttributeTips</name>
+        <promptVersions>
+            <name>Conseils d’attribut d’engagement</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>NPSPLicenseDay20</name>
+        <promptVersions>
+            <name>Licence NPSP Jour 20</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>MFAAutoEnableAwarenessforCompliantOrgs</name>
+        <promptVersions>
+            <name>Prise en cmpte de l’activ. auto de la MFA pour les organisations conformes</name>
+        </promptVersions>
+    </prompts>
+    <prompts>
+        <name>X4StepWalkthroughonContact</name>
+        <promptVersions>
+            <name>Procédure en 4 étapes sur Contact Étape 1</name>
+            <stepNumber>1</stepNumber>
+        </promptVersions>
+        <promptVersions>
+            <name>Procédure en 4 étapes sur Contact Étape 2</name>
+            <stepNumber>2</stepNumber>
+        </promptVersions>
+        <promptVersions>
+            <name>Procédure en 4 étapes sur Contact Étape 3</name>
+            <stepNumber>3</stepNumber>
+        </promptVersions>
+        <promptVersions>
+            <name>Procédure en 4 étapes sur Contact Étape 4</name>
+            <stepNumber>4</stepNumber>
+        </promptVersions>
+    </prompts>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewAccount --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewEvent --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewNote --></label>
+        <name>NewNote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewTask --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- Screen Flows --></description>
+        <label><!-- Screen Flows --></label>
+        <name>screen_flows_prebuilt_crt</name>
+        <sections>
+            <label><!-- Flow Interview Log Entries --></label>
+            <name>Flow Interview Log Entries</name>
+        </sections>
+        <sections>
+            <label><!-- Flow Interview Logs --></label>
+            <name>Flow Interview Logs</name>
+        </sections>
+    </reportTypes>
+</Translations>
