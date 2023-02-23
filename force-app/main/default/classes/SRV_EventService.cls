@@ -1,7 +1,7 @@
 public with sharing class SRV_EventService {
 
     public static void createEventFromInterview(List<Interview__c> newIntreviews) {
-        if(newIntreviews==null || newIntreviews.size()==0)
+        if(newIntreviews==null || newIntreviews.isEmpty())
             return;
 
         List<Event> events = new List<Event>();
@@ -20,18 +20,29 @@ public with sharing class SRV_EventService {
     }
 
     public static void updateEventDates(Map<Id, Interview__c> updatedIntreviews) {
-        if(updatedIntreviews==null || updatedIntreviews.size()==0)
+        if(updatedIntreviews==null || updatedIntreviews.isEmpty())
             return;
 
-        Map<Id, Event> events = new Map<Id, Event>([Select Id, WhatId FROM Event WHERE WhatId IN :updatedIntreviews.keySet()]);
-        for(Id key: events.keySet()) {
-            // update event 
-            Event event = events.get(key);
+        List<Event> events = new List<Event>([Select Id, WhatId FROM Event WHERE WhatId IN :updatedIntreviews.keySet()]);
+        for(Event event: events) {
             Interview__c interview = updatedIntreviews.get(event.WhatId);
             event.StartDateTime = interview.InterviewStartDate__c;
             event.EndDateTime = interview.InterviewEndDate__c;
             event.Subject = event.WhatId;
         }
-        update events.values();
+        update events;
+    }
+
+
+    @AuraEnabled(cacheable=true)
+    public static List<Event> getEventsByDate(Date activityDate) {
+        try {
+            List<Event> events = new List<Event>([Select Id,Subject, StartDateTime, EndDateTime FROM Event WHERE ActivityDate = :activityDate]);
+        
+            return events;
+        } catch (Exception exp) {
+            System.debug(exp.getMessage());
+            throw new AuraHandledException(exp.getMessage());
+        }
     }
 }
