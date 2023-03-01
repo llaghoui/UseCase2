@@ -1,12 +1,17 @@
 
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px 0px 15px;
+  }
+  
   .calendar-container {
-    background-color: #ffffff;
     height: 500px;
-    overflow: scroll;
+    overflow-y: scroll;
+    margin: 0px;
   }
 
   .time-block {
-    width: 100px;
     height: 50px;
     padding-left: 10px;
     padding-right: 10px;
@@ -20,25 +25,54 @@
     font-size: 12px;
   }
 
-
-  .calendar-view {    
-    width: 487px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 8px;
-    background-color: #ECECEC;
-    height: 720px;
-  }
- 
   .event {
     border-width: 1px 1px 1px 4px;
     border-style: solid;
     border-color: #d6d6d6;
     border-left-color: #496fa4;
-    background-color: #ffffff;
+    background-color: #e7f6ff;
     box-sizing: border-box;
   }
+
+  .event-1h {
+    height: 60px;
+  }
   
+  .event-2h {
+    height: 120px;
+  }
+
+  .event-3h {
+    height: 180px;
+  }
+  
+  .event-4h {
+    height: 240px;
+  }
+
+  .event-5h {
+    height: 300px;
+  }
+  
+  .event-6h {
+    height: 360px;
+  }
+
+  .event-7h {
+    height: 420px;
+  }
+  
+  .event-8h {
+    height: 480px;
+  }
+  
+  .timeMarker {
+    border-bottom: 2px solid #ff0d0d;
+    position: relative;
+    top: var(--topTimeMarker,  0%);
+  }
+
+
   .event-title {
     color: #496fa4;
     font-size: 11px;
@@ -82,5 +116,13 @@
     border-width: 0px 0px 4px 0px;
     border-style: solid;
     border-color: #b40000;
+  }
+
+  .hour-row {
+    min-height: 60px;
+  }
+
+  .border-buttom {
+    border-bottom: 1px solid #c2c2c2;
   }
   

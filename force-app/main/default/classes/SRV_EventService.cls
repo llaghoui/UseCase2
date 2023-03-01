@@ -8,10 +8,10 @@ public with sharing class SRV_EventService {
         for( Interview__c interview: newIntreviews) {
             Event event = new Event(
                 OwnerId = interview.CreatedById,
-                StartDateTime = interview.InterviewStartDate__c,
-                EndDateTime = interview.InterviewEndDate__c,
-                ActivityDateTime = interview.InterviewStartDate__c,
-                Subject = interview.Name,
+                StartDateTime = interview.InterviewStartDateTime__c,
+                EndDateTime = interview.InterviewEndDateTime__c,
+                ActivityDateTime = interview.InterviewStartDateTime__c,
+                Subject = interview.Name__c,
                 WhatId = interview.Id
             );
             events.add(event);
@@ -23,26 +23,13 @@ public with sharing class SRV_EventService {
         if(updatedIntreviews==null || updatedIntreviews.isEmpty())
             return;
 
-        List<Event> events = new List<Event>([Select Id, WhatId FROM Event WHERE WhatId IN :updatedIntreviews.keySet()]);
+        List<Event> events = [Select Id, WhatId FROM Event WHERE WhatId IN :updatedIntreviews.keySet()];
         for(Event event: events) {
             Interview__c interview = updatedIntreviews.get(event.WhatId);
-            event.StartDateTime = interview.InterviewStartDate__c;
-            event.EndDateTime = interview.InterviewEndDate__c;
+            event.StartDateTime = interview.InterviewStartDateTime__c;
+            event.EndDateTime = interview.InterviewEndDateTime__c;
             event.Subject = event.WhatId;
         }
         update events;
-    }
-
-
-    @AuraEnabled(cacheable=true)
-    public static List<Event> getEventsByDate(Date activityDate) {
-        try {
-            List<Event> events = new List<Event>([Select Id,Subject, StartDateTime, EndDateTime FROM Event WHERE ActivityDate = :activityDate]);
-        
-            return events;
-        } catch (Exception exp) {
-            System.debug(exp.getMessage());
-            throw new AuraHandledException(exp.getMessage());
-        }
     }
 }

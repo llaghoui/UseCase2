@@ -1,44 +1,37 @@
 <template>
-    <div class="slds-grid slds-gutters calendar-container">
-        <div class="slds-col slds-size_1-of-5">
-          <div class="time-block">
-            <div class="time">00:00 <small>AM</small></div>
-            <div class="time">1:00 <small>AM</small></div>
-            <div class="time">2:00 <small>AM</small></div>
-            <div class="time">3:00 <small>AM</small></div>
-            <div class="time">4:00 <small>AM</small></div>
-            <div class="time">5:00 <small>AM</small></div>
-            <div class="time">6:00 <small>AM</small></div>
-            <div class="time">7:00 <small>AM</small></div>
-            <div class="time">8:00 <small>AM</small></div>
-            <div class="time default-time">9:00 <small>AM</small></div>
-            <div class="time">10:00 <small>AM</small></div>
-            <div class="time">11:00 <small>AM</small></div>
-            <div class="time">12:00 <small>PM</small></div>
-            <div class="time">1:00 <small>PM</small></div>
-            <div class="time">2:00 <small>PM</small></div>
-            <div class="time">3:00 <small>PM</small></div>
-            <div class="time">4:00 <small>PM</small></div>
-            <div class="time">5:00 <small>PM</small></div>
-            <div class="time">6:00 <small>PM</small></div>
-            <div class="time">7:00 <small>PM</small></div>
-            <div class="time">8:00 <small>PM</small></div>
-            <div class="time">9:00 <small>PM</small></div>
-            <div class="time">10:00 <small>PM</small></div>
-            <div class="time">11:00 <small>PM</small></div>
+    <lightning-card title="Calendar">
+        <div class="header">
+            <lightning-formatted-date-time value={activityDate}
+            year="2-digit" month="short" day="numeric"></lightning-formatted-date-time>
+            <lightning-button-icon icon-name="utility:new_window" onclick={navigateToCalendar} alternative-text="Go To Calendar" title="Go To Calendar"></lightning-button-icon>
         </div>
+        <div>
+            <lightning-button-icon icon-name="utility:chevronleft" onclick={showPreviousDayEvents} variant="container" alternative-text="Previous day" title="Previous day"></lightning-button-icon>
+            <lightning-button-icon icon-name="utility:chevronright" onclick={showNextDayEvents}  variant="container" alternative-text="Next day" title="Next day"></lightning-button-icon>
         </div>
-        <div class="slds-col slds-size_4-of-5">
-            <div id="calendar-view" class="calendar-view">
-                <div class="event">
-                    <div class=" border-blue"></div>
-                    <div class="div">
-                        <div class="event-title">Sample Item</div>
-                        <span class="event-location">Sample Location</span>
+        <div class="slds-grid slds-gutters calendar-container slds-grid slds-grid_vertical">
+            <div class="timeMarker" ></div>
+            <template for:each={dayCalendar} for:item="hour">
+                <div  class="slds-col slds-grid hour-row" key={hour.index}>
+                    <div class="slds-col slds-size_1-of-5 border-buttom">
+                        <div class="time-block">
+                            <div class="time">{hour.time}</div>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_4-of-5 border-buttom">
+                        <div class="calendar-view">
+                            <div class="calendar-view" if:true={hour.showEvent} >
+                                <div class={hour.event.class}>
+                                    <div class="div">
+                                        <div class="event-title">{hour.event.title}</div>
+                                        <span class="event-location">{hour.event.startDate} - {hour.event.duration}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="actual-time-line" ></div>
-            </div>
+            </template>
         </div>
-      </div>
+    </lightning-card>
 </template>

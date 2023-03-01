@@ -6,6 +6,10 @@ global with sharing class GetInterviewsByDateRangeRestResource {
         List<Interview__c> interviews;
         try {
             interviews = SRV_InterviewService.getInterviewsByDateRange(startDate, endDate);
+
+            if(interviews==null || interviews.isEmpty())
+                throw new InterviewNotFoundException('No interviews in this range');
+
         } catch (Exception ex) {
             System.debug(ex.getMessage());
         }

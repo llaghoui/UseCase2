@@ -6,6 +6,10 @@ global with sharing class GetInterviewByIdRestResource {
         Interview__c interview;
         try {
             interview = SRV_InterviewService.getInterviewById(interviewId);
+
+            if(interview==null)
+                throw new InterviewNotFoundException('Interview not found');
+
         } catch (Exception ex) {
             System.debug(ex.getMessage());
         }
