@@ -1,5 +1,5 @@
-@RestResource(urlMapping='/Interview/Future/*')
-global with sharing class GetFutureInterviewsRestResource {
+@RestResource(urlMapping='/FutureInterviews/*')
+global with sharing class Restapi_GetFutureInterviews {
 
     @HttpGet
     global static List<Interview__c> doGet() {
@@ -11,7 +11,8 @@ global with sharing class GetFutureInterviewsRestResource {
                 throw new InterviewNotFoundException('No comming interviews');
 
         } catch (Exception ex) {
-            System.debug(ex.getMessage());
+            Log.error(ex.getMessage());
+            throw ex;
         }
         return interviews;
     }

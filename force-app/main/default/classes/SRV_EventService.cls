@@ -28,7 +28,7 @@ public with sharing class SRV_EventService {
             Interview__c interview = updatedIntreviews.get(event.WhatId);
             event.StartDateTime = interview.InterviewStartDateTime__c;
             event.EndDateTime = interview.InterviewEndDateTime__c;
-            event.Subject = event.WhatId;
+            event.Subject = interview.Name__c;
         }
         update events;
     }

@@ -24,7 +24,9 @@
                                 <div class={hour.event.class}>
                                     <div class="div">
                                         <div class="event-title">{hour.event.title}</div>
-                                        <span class="event-location">{hour.event.startDate} - {hour.event.duration}</span>
+                                        <span class="event-location"><lightning-formatted-date-time 
+                                            value={hour.event.startDate} hour="2-digit" minute="2-digit"></lightning-formatted-date-time> - {hour.event.duration}h
+                                        </span>
                                     </div>
                                 </div>
                             </div>

@@ -37,8 +37,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.InterviewStartDate__c</fieldItem>
-                <identifier>RecordInterviewStartDate_cField</identifier>
+                <fieldItem>Record.InterviewStartDateTime__c</fieldItem>
+                <identifier>RecordInterviewStartDateTime_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
