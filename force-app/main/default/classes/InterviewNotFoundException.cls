@@ -1,0 +1,1 @@
+public class InterviewNotFoundException extends Exception{}
