@@ -9,11 +9,11 @@
         <value>FAQs</value>
     </caseValues>
     <fields>
-        <label><!-- Answer --></label>
+        <label></label>
         <name>Answer__c</name>
     </fields>
     <fields>
-        <label><!-- Question --></label>
+        <label></label>
         <name>Question__c</name>
     </fields>
     <startsWith>Consonant</startsWith>
