@@ -2112,7 +2112,7 @@
     </types>
     <types>
         <members>Trial_Documents</members>
-        <members>Trial_Documents/Trial_Customer_Portal_Header_HTML.html</members>
+        <members>Trial_Documents/Trial_Customer_Portal_Footer_HTML.html</members>
         <name>Document</name>
     </types>
     <types>
@@ -2122,7 +2122,7 @@
     </types>
     <types>
         <members>Trial_Documents</members>
-        <members>Trial_Documents/Trial_Customer_Portal_Footer_HTML.html</members>
+        <members>Trial_Documents/Trial_Customer_Portal_Header_HTML.html</members>
         <name>Document</name>
     </types>
     <types>
@@ -2142,27 +2142,7 @@
         <name>EmailServicesFunction</name>
     </types>
     <types>
-        <members>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</members>
-        <name>EmailTemplate</name>
-    </types>
-    <types>
-        <members>unfiled$public/SUPPORTCaseResponsewithSolutionSAMPLE</members>
-        <name>EmailTemplate</name>
-    </types>
-    <types>
-        <members>unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE</members>
-        <name>EmailTemplate</name>
-    </types>
-    <types>
         <members>unfiled$public/CustomerPortalChangePwdEmail</members>
-        <name>EmailTemplate</name>
-    </types>
-    <types>
-        <members>unfiled$public/CustomerPortalNewUserEmail</members>
-        <name>EmailTemplate</name>
-    </types>
-    <types>
-        <members>unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE</members>
         <name>EmailTemplate</name>
     </types>
     <types>
@@ -2170,11 +2150,11 @@
         <name>EmailTemplate</name>
     </types>
     <types>
-        <members>unfiled$public/LeadsWebtoLeademailresponseSAMPLE</members>
+        <members>unfiled$public/CustomerPortalNewUserEmail</members>
         <name>EmailTemplate</name>
     </types>
     <types>
-        <members>unfiled$public/SUPPORTWebtoCaseemailresponseSAMPLE</members>
+        <members>unfiled$public/SUPPORTCaseResponsewithSolutionSAMPLE</members>
         <name>EmailTemplate</name>
     </types>
     <types>
@@ -2182,7 +2162,19 @@
         <name>EmailTemplate</name>
     </types>
     <types>
+        <members>unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
         <members>unfiled$public/LeadsNewassignmentnotificationSAMPLE</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>unfiled$public/SUPPORTWebtoCaseemailresponseSAMPLE</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</members>
         <name>EmailTemplate</name>
     </types>
     <types>
@@ -2190,7 +2182,15 @@
         <name>EmailTemplate</name>
     </types>
     <types>
+        <members>unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
         <members>unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>unfiled$public/LeadsWebtoLeademailresponseSAMPLE</members>
         <name>EmailTemplate</name>
     </types>
     <types>
@@ -2198,7 +2198,27 @@
         <name>EmailTemplate</name>
     </types>
     <types>
+        <members>unfiled$public/CommunityForgotPasswordEmailTemplate</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>unfiled$public/ExperienceCloudSelfRegMicroBatchSubErrorEmailTemplate</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>unfiled$public/CommunityChgEmailVerOldTemplate</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
         <members>unfiled$public/CommunityLockoutEmailTemplate</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>unfiled$public/CommunityDeviceActEmailTemplate</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>unfiled$public/CommunityVerificationEmailTemplate</members>
         <name>EmailTemplate</name>
     </types>
     <types>
@@ -2211,26 +2231,6 @@
     </types>
     <types>
         <members>unfiled$public/CommunityChgEmailVerNewTemplate</members>
-        <name>EmailTemplate</name>
-    </types>
-    <types>
-        <members>unfiled$public/CommunityVerificationEmailTemplate</members>
-        <name>EmailTemplate</name>
-    </types>
-    <types>
-        <members>unfiled$public/ExperienceCloudSelfRegMicroBatchSubErrorEmailTemplate</members>
-        <name>EmailTemplate</name>
-    </types>
-    <types>
-        <members>unfiled$public/CommunityDeviceActEmailTemplate</members>
-        <name>EmailTemplate</name>
-    </types>
-    <types>
-        <members>unfiled$public/CommunityForgotPasswordEmailTemplate</members>
-        <name>EmailTemplate</name>
-    </types>
-    <types>
-        <members>unfiled$public/CommunityChgEmailVerOldTemplate</members>
         <name>EmailTemplate</name>
     </types>
     <types>
